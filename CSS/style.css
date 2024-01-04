@@ -1,0 +1,15 @@
+header, footer {
+    background-color: black;
+}
+
+.img-perfil {
+    width: 150px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.footer-direito {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
