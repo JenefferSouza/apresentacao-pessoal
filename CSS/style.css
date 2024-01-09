@@ -1,5 +1,6 @@
 * {
-    margin: 10px;
+    background-color: black;
+    color: #FFF;
 }
 
 .container {
@@ -21,7 +22,25 @@
 .nome {
     height: 60px;
     text-align: center;
+    color: #FFF;
 }
+
+h1:after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+   }
+   /* Animação aplicada ao content referente a classe *.nome* resultando num efeito de cursor piscando. */
+   
+   @keyframes pisca{
+       0%, 100%{
+           opacity: 1;
+       }
+       50%{
+           opacity: 0;
+       }
+   }
 
 .img-perfil {
     width: 250px;
@@ -30,7 +49,17 @@
 }
 
 section {
-    padding-top: 10px;
+    padding-top: 5%;
+    background-image: url(../IMG/matrix-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+}
+
+h2 {
+    background-color: transparent;
 }
 
 .subtitulo {
@@ -38,12 +67,23 @@ section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: grey;
     border-radius: 10px;
+    background-color: tomato;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 img {
     width: 64px;
+    background-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tecnologias {
@@ -52,9 +92,11 @@ img {
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
+    background-color: transparent;
 }
 
 footer {
     text-align: center;
     font-style: italic;
+    padding-top: 10px;
 }
